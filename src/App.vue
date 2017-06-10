@@ -1,13 +1,20 @@
 <template>
   <div id="app">
-  <div>66666</div>
+    <v-header></v-header>
     <router-view></router-view>
+    <tabbar></tabbar>
   </div>
 </template>
 
 <script>
+import Tabbar from './components/public/tabbar'
+import vHeader from './components/public/head'
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    'tabbar': Tabbar,
+    'vHeader': vHeader
+  }
 }
 </script>
 

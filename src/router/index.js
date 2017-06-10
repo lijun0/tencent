@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from '@/components/Index'
-import Classification from '@/components/Classification/classification'
-import ITList from '@components/Classification/ITList'
-import DesignList from '@components/Classification/DesignList'
-import LanguageList from '@components/Classification/LanguageList'
-import Curriculum from '@/components/Curriculum/index'
-import Mine from '@/components/Mine/mine'
-import index from '@/components/Mine/index'
+import Index from '@/page/index'
+import Classification from '@/page/Classification/classification'
+import ITList from '@/page/Classification/ITList'
+import DesignList from '@/page/Classification/DesignList'
+import LanguageList from '@/page/Classification/LanguageList'
+import Curriculum from '@/page/Curriculum/index'
+import Mine from '@/page/Mine/mine'
+import index from '@/page/Mine/index'
 Vue.use(Router)
 
 export default new Router({
@@ -21,34 +21,34 @@ export default new Router({
       path: '/Classification',
       name: 'Classification',
       component: Classification,
-      children:[
+      children: [
         {
-          path:'/Classification/ITList',
+          path: 'ITList',
           name: 'ITList',
-          component: ITList 
+          component: ITList
         },
         {
-          path:'/Classification/DesignList',
+          path: 'DesignList',
           name: 'DesignList',
-          component: DesignList 
+          component: DesignList
         },
         {
-          path:'/Classification/LanguageList',
+          path: 'LanguageList',
           name: 'LanguageList',
           component: LanguageList
         }
       ]
     },
     {
-      path:'/Curriculum',
+      path: '/Curriculum',
       name: 'Curriculum',
       component: Curriculum
     },
     {
-      path:'/Mine',
+      path: '/Mine',
       name: 'Mine',
       component: Mine,
-      children:[{
+      children: [{
         path: '/Mine/index',
         component: index
       }]
