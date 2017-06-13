@@ -2,37 +2,37 @@
   <div class="cateLeft" v-model="selected">
       <ul class="cate-list">
           <li class="cate">
-            <router-link to="/" class="cate__item" id="cate__item1" @click.native="setIndex(1)">
+            <router-link to="/classification/ITList" class="cate__item" id="cate__item1" @click.native="setIndex(1)">
             <p v-if="selected != 1" class="icon">IT·互联网</p>
             <p v-if="selected === 1" class="icon__active">IT·互联网</p>
             </router-link>
           </li>
           <li class="cate">
-            <router-link to="/DesignList" class="cate__item" id="cate__item2" @click.native="setIndex(2)">
+            <router-link to="/classification/DesignList" class="cate__item" id="cate__item2" @click.native="setIndex(2)">
             <p v-if="selected != 2" class="icon">设计·创作</p>
             <p v-if="selected === 2" class="icon__active">设计·创作</p>
             </router-link>
           </li>
           <li class="cate">
-            <router-link to="/LanguageList" class="cate__item" id="cate__item3" @click.native="setIndex(3)">
+            <router-link to="/classification/LanguageList" class="cate__item" id="cate__item3" @click.native="setIndex(3)">
             <p v-if="selected != 3" class="icon">语言·留学</p>
             <p v-if="selected === 3" class="icon__active">语言·留言</p>
             </router-link>
           </li>
           <li class="cate">
-            <router-link to="/Mine" class="cate__item" id="cate__item5" @click.native="setIndex(4)">
+            <router-link to="/classification/ProfessionList" class="cate__item" id="cate__item5" @click.native="setIndex(4)">
             <p v-if="selected != 4" class="icon">职业·考证</p>
             <p v-if="selected === 4" class="icon__active">职业·考证</p>
             </router-link>
           </li>
           <li class="cate">
-            <router-link to="/Classification" class="cate__item" id="cate__item2" @click.native="setIndex(5)">
+            <router-link to="/classification/ExamList" class="cate__item" id="cate__item2" @click.native="setIndex(5)">
             <p v-if="selected != 5" class="icon">升学·考研</p>
             <p v-if="selected === 5" class="icon__active">升学·考研</p>
             </router-link>
           </li>
           <li class="cate">
-            <router-link to="/Curriculum" class="cate__item" id="cate__item3" @click.native="setIndex(6)">
+            <router-link to="/classification/InterestList" class="cate__item" id="cate__item3" @click.native="setIndex(6)">
             <p v-if="selected != 6" class="icon">兴趣·生活</p>
             <p v-if="selected === 6" class="icon__active">兴趣·生活</p>
             </router-link>

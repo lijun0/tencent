@@ -14,13 +14,13 @@
           <h3 class="common-title">{{item.title}}</h3>
           <ul class="common__course-list">
             <li class="common__course-item" v-for="item in item.course">
-              <a href="" class="common__course-link">
+              <router-link to="/Course" class="common__course-link">
                 <div class="common__course-cover-wrap">
                   <img :src="item.pic" alt="" class="common__course-cover">
                 </div>
                 <h3 class="common__course-title">{{item.desc}}</h3>
                 <p class="common__course-price">{{item.price}}</p>
-              </a>
+              </router-link>
             </li>
           </ul>
         </div>
@@ -172,6 +172,7 @@ export default {
     letter-spacing: 4px;
     font-weight: 400;
     color: #888;
+    padding-top: 16px;
 }
 .common-title:before {
     margin-right: 13px;
@@ -231,7 +232,8 @@ a, div {
 }
 .common__course-title {
     margin-top: 7px;
-    padding: 0 4px;
+    padding: 3px 4px;
+    margin-bottom: 4px;
     height: 18px;
     font-size: 16px;
     line-height: 24px;
@@ -248,7 +250,7 @@ h1, h2, h3, h4, h5, h6 {
 .common__course-price {
     padding-left: 4px;
     font-size: 14px;
-    line-height: 10px;
+    line-height: 14px;
     color: #188eee;
     text-align: left;
 }

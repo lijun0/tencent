@@ -6,7 +6,7 @@
       <p v-if="selected != 1" class="icon">首页</p>
       <p v-if="selected === 1" class="icon__active">首页</p>
     </router-link>
-    <router-link to="/Classification" class="tabbar__item" id="tabbar__item2" @click.native="setIndex(2)">
+    <router-link to="/Classification/ITList" class="tabbar__item" id="tabbar__item2" @click.native="setIndex(2)">
       <i v-if="selected != 2" class="i-font i-cate" alt=""></i>
       <i v-if="selected === 2" class="i-cate i-active" alt=""></i>
       <p v-if="selected != 2" class="icon">分类</p>
@@ -18,11 +18,11 @@
       <p v-if="selected != 3" class="icon">课程表</p>
       <p v-if="selected === 3" class="icon__active">课程表</p>
     </router-link>
-    <router-link to="/Mine" class="tabbar__item" id="tabbar__item5" @click.native="setIndex(5)">
-      <i v-if="selected != 5" class="i-font i-center3" alt=""></i>
-      <i v-if="selected === 5" class="i-center3 i-active" alt=""></i>
-      <p v-if="selected != 5" class="icon">我的</p>
-      <p v-if="selected === 5" class="icon__active">我的</p>
+    <router-link to="/Mine" class="tabbar__item" id="tabbar__item5" @click.native="setIndex(4)">
+      <i v-if="selected != 4" class="i-font i-center3" alt=""></i>
+      <i v-if="selected === 4" class="i-center3 i-active" alt=""></i>
+      <p v-if="selected != 4" class="icon">我的</p>
+      <p v-if="selected === 4" class="icon__active">我的</p>
     </router-link>
   </div>
 </template>
@@ -59,10 +59,9 @@
   .tabbar {
     position: fixed;
     bottom: 0;
-    height: 5rem;
+    height: 4rem;
     width: 100%;
     background-color: #fff;
-    opacity: .95;
     display: flex;
   }
   .tabbar::before {
@@ -71,18 +70,19 @@
     height: 1px;
     width: 100%;
     background-color: #d2d2d2;
-    transform: scaleY(.35);
-    -webkit-transform: scaleY(.35)
+    /*transform: scaleY(.35);
+    -webkit-transform: scaleY(.35)*/
   }
   .tabbar__item {
     text-align: center;
     flex: 1;
+    /*width: 25%;*/
   }
   .tabbar__item i {
     margin: 0 auto;
     display: block;
-    margin-top: .7rem;
-    margin-bottom: .1rem;
+    margin-top: .3rem;
+    margin-bottom: .6rem;
     width: 1.5rem;
     height: 1.5rem;
     font-family: "mfont";
@@ -94,7 +94,7 @@
     color: #777;
   }
   .i-active {
-    margin-top: 5px;
+    /*margin-top: 5px;*/
     color: #188eee;
   }
   .i-home4:before {
@@ -117,7 +117,7 @@
     margin-top: 0;
     color: #188eee;
   }
-  .tabbar__item .router-link-active p {
+  .tabbar__item p {
     color: #188eee;
   }
 </style>

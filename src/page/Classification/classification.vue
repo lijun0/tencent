@@ -1,7 +1,9 @@
 <template>
   <div>
     <CateLeft></CateLeft>
-    <router-view></router-view>
+    <div>
+      <router-view></router-view>
+    </div>
   </div>
   
 </template>

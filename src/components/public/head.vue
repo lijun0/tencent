@@ -32,6 +32,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="css" scoped>
 @import '../../assets/css/font.css';
+.header{
+  /*height: 2.1875rem;*/
+  background-color: #fff;
+}
 .header-search{
   position: fixed;
   top:0;
@@ -50,7 +54,7 @@ export default {
 .header-logo i{
   display:block;
   position:relative;
-  top:-1px;
+  top:14px;
   font-size:1.625rem;
   color:#00a4ff;
 }

@@ -1,5 +1,8 @@
 <template>
   <div class="cat-detail-container">
+    <div class="banner">
+      <img src="http://p.qpic.cn/qqconadmin/0/c26e002a75ca49a3b0340df9dc515faa/0" alt="">
+    </div>
     <div class="inner scroll-wrapper">
       <ul class="sub-cat-list" v-for="item in catItems">
         <!--<li class="sub-cat">-->
@@ -22,23 +25,23 @@ export default {
     return {
       catItems: [
         {
-          subTitle: '实用英语',
+          subTitle: '公务求职',
           subItems: [
-            '英语口语',
-            '学术英语',
-            '新概念英语',
-            '词汇语法',
-            '职场英语'
+            '公务员',
+            '事业单位',
+            '教师考试',
+            '金融银行',
+            '警法考试',
+            '企业招聘'
           ]
         },
         {
-          subTitle: '出国留学',
+          subTitle: '法学院',
           subItems: [
-            '雅思',
-            '托福',
-            'K12留学',
-            '研究生留学',
-            '留学指导'
+            '法律硕士',
+            '司法考试',
+            '法律实务',
+            '趣味法学'
           ]
         }
       ]
@@ -51,6 +54,21 @@ export default {
 <style scoped>
 .cat-detail-container{
   height: 100%;
+}
+.banner {
+    overflow: hidden;
+    margin-top: .15rem;
+    position: relative;
+    /*right:0;*/
+    /*padding-top: 39%;*/
+    /*height: 0;*/
+    /*background: url(//9.url.cn/edu/mobilev2/img/default-img.74ba483.png) no-repeat;*/
+    background-size: cover;
+    border-radius: 4px;
+}
+.banner img{
+  border-radius: 4px;
+  margin-left: 80px;
 }
 .inner{
   position: relative;
