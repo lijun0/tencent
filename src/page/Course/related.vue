@@ -4,7 +4,8 @@
       <div class="rel-class__title">老师推荐课程</div>
       <ul class="teacher-recom__list">
         <li class="course list-view__item" v-for="item in recomList">
-          <div class="course__cover" style="background-image:url(item.img);">
+          <div class="course__cover">
+            <img :src="item.img" alt="">
             <span class="course__cover-tips course__cover-tips--status">{{item.status}}</span>
           </div>
           <h3 class="course__name">{{item.name}}</h3>
@@ -20,46 +21,19 @@
 
 <script>
 export default {
-  name: 'hello',
+  mounted () {
+    this.axios.get('https://www.easy-mock.com/mock/5943d53a8ac26d795f1c9a61/tencent/recomList')
+      .then((response) => {
+        this.recomList = response.data.recomList
+        // console.log(this.recomList)
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  },
   data () {
     return {
-      recomList: [
-        {
-          img: 'http://10.url.cn/qqcourse_logo_ng/ajNVdqHZLLDjsWO3PGrkOzRBp3kiavjCGnt3hrQkz5VAXgTqm7r7D32IsM5EKXQS0IGqnQzfO6TY/220?tp=webp',
-          status: '3万人已报名',
-          name: 'MK-linux运维-openstack-saltstack-腾讯官方认证课程',
-          info: '随到随学',
-          price: '免费'
-        },
-        {
-          img: 'http://10.url.cn/qqcourse_logo_ng/ajNVdqHZLLAfVF1rcUqjnrFjYsXE4cq1oyFjpibbKNGZrva7njWxltgwMe0vrbvrISFzKNZ6RPGc/220?tp=webp',
-          status: '2万人已报名',
-          name: 'MK-Linux高级运维 大师级课程 云计算 mysql数据库 centos7',
-          info: '随到随学',
-          price: '免费'
-        },
-        {
-          img: 'http://10.url.cn/qqcourse_logo_ng/ajNVdqHZLLA5R6DKqVg2zBXM1StC1BZzpRndIoxlmSCX7qgCL8j5q3k5RyDzllItf16uicyo48AI/220?tp=webp',
-          status: '2万人已报名',
-          name: 'While老师-Python自动化运维开发（Django、Flask）-速成课程',
-          info: '随到随学',
-          price: '免费'
-        },
-        {
-          img: 'http://10.url.cn/qqcourse_logo_ng/ajNVdqHZLLBYfhsQCax4SChWrw7MuHQGpdHuDENtdLUh39go4pgoYsqc5Odw9TXDvxJ032Tc1E8/220?tp=webp',
-          status: '1万人已报名',
-          name: 'int老师主讲-高薪就业python自动化运维云计算企业实战课程',
-          info: '随到随学',
-          price: '免费'
-        },
-        {
-          img: 'http://10.url.cn/qqcourse_logo_ng/ajNVdqHZLLBYfhsQCax4SChWrw7MuHQGpdHuDENtdLUh39go4pgoYsqc5Odw9TXDvxJ032Tc1E8/220?tp=webp',
-          status: '1万人已报名',
-          name: 'int老师主讲-高薪就业python自动化运维云计算企业实战课程',
-          info: '随到随学',
-          price: '免费'
-        }
-      ]
+      recomList: []
     }
   }
 }
@@ -120,8 +94,10 @@ export default {
     border-radius: 4px;
     width: 140px;
     height: 80px;
-    background: url(//9.url.cn/edu/mobilev2/img/default-img.74ba483.png) #fff no-repeat top left;
-    background-size: 140px 80px;
+}
+.course__cover img{
+    width: 140px;
+    height: 80px;
 }
 .course__name {
     display: -webkit-box;

@@ -5,9 +5,11 @@
         <!--<li class="sub-cat">-->
           <a href="javascript:;" class="sub-cat-title">{{item.subTitle}}</a>
           <ul class="sub-cat-sub">
-            <li class="sub-item" v-for="item in item.subItems">
-              <a href="javascript:;" class="sub-item-title">{{item}}</a>
-            </li>
+            <router-link to="/CourseList/mask">
+              <li class="sub-item" v-for="item in item.subItems">
+                <a href="javascript:;" class="sub-item-title">{{item}}</a>
+              </li>
+            </router-link>
           </ul>
         <!--</li>-->
       </ul>

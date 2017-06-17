@@ -1,7 +1,8 @@
 <template>
   <div class="list-wrapper">
     <ul class="course-list">
-      <li class="course list-view__item">
+      <router-link to="/Course/Info">
+        <li class="course list-view__item">
         <div class="course__cover">
           <div class="course__cover-img" style="background-image:url(http://10.url.cn/qqcourse_logo_ng/ajNVdqHZLLCYR0ZhPtQkEc4Kw276ibriba9ZibzTtYkZycCUuia5ktiaiaw9zz9RfGK1VHGOxPrAS0kIA/90?tp=webp90&amp;tp=webp);"></div>
           <div class="course__cover-mask"></div>
@@ -30,6 +31,7 @@
           <span class="course__sub-name">继续学习：第2节 自定义函数（上）</span> 
         </p>
       </li>
+      </router-link>
     </ul>
     没有更多数据
   </div>

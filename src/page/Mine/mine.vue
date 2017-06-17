@@ -3,7 +3,9 @@
     <div class="wrapper">
         <div class="me-mod">
           <h1 class="me-name">前端求职中</h1>
-          <div class="me-face" style="background-image: url(http://q2.qlogo.cn/g?b=qq&amp;k=1QkflibppmQa3DsG3fHwVTQ&amp;s=140&amp;t=1483347220);"></div>
+          <router-link to="/Mine/index">
+            <div class="me-face" style="background-image: url(http://q2.qlogo.cn/g?b=qq&amp;k=1QkflibppmQa3DsG3fHwVTQ&amp;s=140&amp;t=1483347220);"></div>
+          </router-link>
           <div class="me-interest-list" id="me-interest-list" style="font-size: 12px; display: block;">
             <span class="me-interest" data-pos="0">移动开发</span>
             <span class="me-interest" data-pos="1">前端</span>
@@ -65,12 +67,15 @@
                  <span>QQ会员学习专区</span>
               </a>
             </li>
-            <li class="ui-item">
-              <span class="icon-phone icon"></span>
-              <a class="ui-item-mycontact" data-name="myContactInfo">
-                 <span>联系方式</span>
-              </a>
-            </li>
+            <router-link to="/Mine/index">
+              <li class="ui-item">
+                <span class="icon-phone icon"></span>
+                <a class="ui-item-mycontact" data-name="myContactInfo">
+                    <span>联系方式</span>
+                </a>
+              </li>
+            </router-link>
+            
             <li class="ui-item">
               <span class="icon-advice icon"></span>
               <a class="ui-item-feedback" data-name="feedback">

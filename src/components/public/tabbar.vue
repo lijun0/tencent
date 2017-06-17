@@ -63,6 +63,7 @@
     width: 100%;
     background-color: #fff;
     display: flex;
+    z-index:99;
   }
   .tabbar::before {
     content: '';

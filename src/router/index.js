@@ -16,6 +16,12 @@ import Info from '@/page/Course/info'
 import Directory from '@/page/Course/directory'
 import Related from '@/page/Course/related'
 import mask from '@/page/CourseList/mask'
+import IT from '@/page/CourseList/menu-mt/IT'
+import design from '@/page/CourseList/menu-mt/design'
+import language from '@/page/CourseList/menu-mt/language'
+import career from '@/page/CourseList/menu-mt/career'
+import cap from '@/page/CourseList/menu-mt/cap'
+import interest from '@/page/CourseList/menu-mt/interest'
 Vue.use(Router)
 
 export default new Router({
@@ -71,10 +77,11 @@ export default new Router({
       path: '/Mine',
       name: 'Mine',
       component: Mine,
-      children: [{
-        path: '/Mine/index',
-        component: index
-      }
+      children: [
+        {
+          path: '/Mine/index',
+          component: index
+        }
       ]
     },
     {
@@ -99,7 +106,39 @@ export default new Router({
     {
       path: '/CourseList/mask',
       name: mask,
-      component: mask
+      component: mask,
+      children: [
+        {
+          path: '/menu-mt/IT',
+          name: IT,
+          component: IT
+        },
+        {
+          path: '/menu-mt/design',
+          name: design,
+          component: design
+        },
+        {
+          path: '/menu-mt/language',
+          name: language,
+          component: language
+        },
+        {
+          path: '/menu-mt/career',
+          name: career,
+          component: career
+        },
+        {
+          path: '/menu-mt/interest',
+          name: interest,
+          component: interest
+        },
+        {
+          path: '/menu-mt/cap',
+          name: cap,
+          component: cap
+        }
+      ]
     }
   ]
 })

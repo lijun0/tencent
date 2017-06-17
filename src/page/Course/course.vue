@@ -2,7 +2,8 @@
   <div class="global">
     <div class="video">
       <div class="video-task__player">
-        <i class="icon-font i-play video-task__player-icon"></i>
+        <video width="375" height="200"  controls src="http://117.41.241.14/vedu.tc.qq.com/t14187jcf3r.m701.mp4?vkey=779C15929AFC3DD1E3C5185E4D25BEB1207DD1D68F8B77A831F8BF0B2B8FCD77EC63384F2F9757BF54016DD8720F8C9C9E231338FBA8435CBA4BFB9EA1A6B99097276C9DB1EB020AC72ED5ACBC0768B97ED9F15DBDBFFE7E&br=16&platform=2&fmt=auto&level=0&sdtfrom=v3010&guid=e477e5d6ade3db8a52fb690b9b5651f3"></video>
+        <!--<i class="icon-font i-play video-task__player-icon"></i>-->
       </div>
     </div>
     <div class="course-info">
@@ -46,7 +47,6 @@ export default {
       this.selected = n
     }
   },
-  // 状态传回父容器
   watch: {
     selected: function (value) {
       // console.log(value)
@@ -61,7 +61,7 @@ export default {
 .video{
   width: 100%;
   height: 13.1875rem;
-  background-image: url(https://10.url.cn/qqcourse_logo_ng/ajNVdqHZLLBjW3Q3mWPDV8HIVYFfjhquLT6TgibpA99ewichkBwhEshzDgryvLCUmCibBH4HiasZ11o/220?tp=webp);
+  /*background-image: url(https://10.url.cn/qqcourse_logo_ng/ajNVdqHZLLBjW3Q3mWPDV8HIVYFfjhquLT6TgibpA99ewichkBwhEshzDgryvLCUmCibBH4HiasZ11o/220?tp=webp);*/
   background-size: 100%;
   position: relative;
   /*top: 0;*/
@@ -80,8 +80,16 @@ export default {
   bottom: 0;
   left: 0;
   margin: auto;
-  width: 120px;
-  height: 54px;
+  /*width: 120px;*/
+  /*height: 54px;*/
+}
+video{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /*margin: auto;*/
 }
 .video-task__player-icon.i-play {
     border: 4px solid #fff;

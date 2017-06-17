@@ -30,63 +30,19 @@
 
 <script>
 export default {
-  name: 'hello',
+  mounted () {
+    this.axios.get('https://www.easy-mock.com/mock/5943d53a8ac26d795f1c9a61/tencent/courseList')
+      .then((response) => {
+        this.courseList = response.data.courseList
+        // console.log(this.courseList)
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  },
   data () {
     return {
-      courseList: [
-        {
-          num: '01',
-          title: 'Linux系统介绍和学习方法课程指导'
-        },
-        {
-          num: '02',
-          title: 'Linux系统介绍和RHEL7操作系统的安装'
-        },
-        {
-          num: '03',
-          title: '创建可用实验快照和服务组装'
-        },
-        {
-          num: '04',
-          title: 'RHEL7基本命令操作'
-        },
-        {
-          num: '05',
-          title: '文件的基本管理和服务器来电后自动开机'
-        },
-        {
-          num: '06',
-          title: 'RHEL7系统用户及组管理'
-        },
-        {
-          num: '07',
-          title: 'RHEL7文件的归档和压缩文件的归档和压缩'
-        },
-        {
-          num: '08',
-          title: 'RHEL7软件包管理'
-        },
-        {
-          num: '09',
-          title: 'Linux磁盘管理'
-        },
-        {
-          num: '10',
-          title: 'RAID磁盘阵列的搭建'
-        },
-        {
-          num: '11',
-          title: '进程管理'
-        },
-        {
-          num: '12',
-          title: '重定向和文件查找'
-        },
-        {
-          num: '13',
-          title: 'LVM逻辑卷-磁盘配额技术'
-        }
-      ]
+      courseList: []
     }
   }
 }
