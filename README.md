@@ -1,6 +1,6 @@
 ## Vue2.0全家桶腾讯课堂（移动端）
 
-最近在学习vue,觉得超好用，忍不住自己仿了个腾讯课堂练练手，不当之处还请大家指正。
+最近在学习vue,觉得超好用，忍不住自己仿了个腾讯课堂练练手，不当之处还请大家指正（持续更新中）。
 
 ## 效果预览
 
@@ -11,7 +11,7 @@
 ## ![动图预览](https://ooo.0o0.ooo/2017/06/21/594a72ea128ef.gif)
 # 描述
 
-前端部分
+### 前端部分
 
 * SPA单页应用，webpack build to dist
 * 移动设备兼容：使用flexible.js和rem处理兼容问题
@@ -19,11 +19,11 @@
 * axios做ajax请求
 * melement-UI完成构建轮播图等组件
 
-后端部分
+### 后端部分
 * mock模拟数据
 * express 做静态资源目录
 
-待更新的功能
+### 待更新的功能
 * 处理数据相关性，让课程和课程组件对应显示
 * 改用 express 抛接口
 * 用 express + mongodb 保存用户状态
@@ -83,11 +83,13 @@ routes: [
 ## Vuex的使用
 Vuex 的状态存储是响应式的。当 Vue 组件从 store 中读取状态的时候，若 store 中的状态发生变化，那么相应的组件也会相应地得到高效更新。
 
-需要注意：Action 类似于 mutation，不同在于：
+需要注意：
+Action 类似于 mutation，不同在于：
 Action 提交的是 mutation，而不是直接变更状态。
 Action 可以包含任意异步操作。
 
-使用
+
+### 使用
 
  npm install
  npm run dev
