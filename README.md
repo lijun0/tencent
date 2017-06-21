@@ -20,7 +20,7 @@
 * melement-UI完成构建轮播图等组件
 
 ### 后端部分
-* mock模拟数据
+* [mock模拟数据](www.easy-mock.com)好看又好用的模拟数据的平台
 * express 做静态资源目录
 
 ### 待更新的功能
