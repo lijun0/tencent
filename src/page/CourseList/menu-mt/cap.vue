@@ -8,44 +8,24 @@
             </router-link>
           </li>
           <li class="cate">
-            <a href="javascript:;" class="cate__item" @click="show1">考研</a>
+            <a href="javascript:;" class="cate__item" @click="show(kaoyan)">考研</a>
           </li>
           <li class="cate">
-            <a href="javascript:;" class="cate__item" @click="show2">大学</a>
+            <a href="javascript:;" class="cate__item" @click="show(college)">大学</a>
           </li>
           <li class="cate">
-            <a href="javascript:;" class="cate__item" @click="show3">高中</a>
+            <a href="javascript:;" class="cate__item" @click="show(highschool)">高中</a>
           </li>
           <li class="cate">
-            <a href="javascript:;" class="cate__item" @click="show4">初中</a>
+            <a href="javascript:;" class="cate__item" @click="show(Junior)">初中</a>
           </li>
           <li class="cate">
-            <a href="javascript:;" class="cate__item" @click="show5">小学</a>
+            <a href="javascript:;" class="cate__item" @click="show(Primary)">小学</a>
           </li>
       </ul>
       <div class="cateRight">
-        <ul class="cate-list" v-if="display1">
-          <li class="cate" v-for="item in kaoyan">
-            <router-link to="" class="cate__item">{{item}}</router-link>
-          </li>
-        </ul>
-        <ul class="cate-list" v-if="display2">
-          <li class="cate" v-for="item in college">
-            <router-link to="" class="cate__item">{{item}}</router-link>
-          </li>
-        </ul>
-        <ul class="cate-list" v-if="display3">
-          <li class="cate" v-for="item in highschool">
-            <router-link to="" class="cate__item">{{item}}</router-link>
-          </li>
-        </ul>
-        <ul class="cate-list" v-if="display4">
-          <li class="cate" v-for="item in Junior">
-            <router-link to="" class="cate__item">{{item}}</router-link>
-          </li>
-        </ul>
-        <ul class="cate-list" v-if="display5">
-          <li class="cate" v-for="item in Primary">
+        <ul class="cate-list" >
+          <li class="cate" v-for="item in list">
             <router-link to="" class="cate__item">{{item}}</router-link>
           </li>
         </ul>
@@ -58,12 +38,7 @@
     data () {
       return {
         selected: 1,
-        display1: false,
-        display2: false,
-        display3: false,
-        display4: false,
-        display5: false,
-        display6: false,
+        list: [],
         kaoyan: [
           '全部',
           '规划指导',
@@ -101,53 +76,8 @@
       }
     },
     methods: {
-      show1 () {
-        this.display1 = !this.display1
-        this.display2 = false
-        this.display3 = false
-        this.display4 = false
-        this.display5 = false
-        this.display6 = false
-      },
-      show2 () {
-        this.display2 = !this.display2
-        this.display1 = false
-        this.display3 = false
-        this.display4 = false
-        this.display5 = false
-        this.display6 = false
-      },
-      show3 () {
-        this.display3 = !this.display3
-        this.display1 = false
-        this.display2 = false
-        this.display4 = false
-        this.display5 = false
-        this.display6 = false
-      },
-      show4 () {
-        this.display4 = !this.display4
-        this.display1 = false
-        this.display2 = false
-        this.display3 = false
-        this.display5 = false
-        this.display6 = false
-      },
-      show5 () {
-        this.display5 = !this.display5
-        this.display1 = false
-        this.display2 = false
-        this.display3 = false
-        this.display4 = false
-        this.display6 = false
-      },
-      show6 () {
-        this.display6 = !this.display6
-        this.display1 = false
-        this.display2 = false
-        this.display3 = false
-        this.display4 = false
-        this.display5 = false
+      show (arr) {
+        this.list = arr
       }
     }
   }
@@ -173,6 +103,7 @@
   }
   .cateRight{
     width: 6rem;
+    height: 52px;
   }
   ul{
     list-style: none;

@@ -10,7 +10,7 @@ import InterestList from '@/page/Classification/InterestList'
 import ProfessionList from '@/page/Classification/ProfessionList'
 import Curriculum from '@/page/Curriculum/index'
 import Mine from '@/page/Mine/mine'
-import index from '@/page/Mine/index'
+import resume from '@/page/Mine/resume'
 import Course from '@/page/Course/course'
 import Info from '@/page/Course/info'
 import Directory from '@/page/Course/directory'
@@ -76,13 +76,11 @@ export default new Router({
     {
       path: '/Mine',
       name: 'Mine',
-      component: Mine,
-      children: [
-        {
-          path: '/Mine/index',
-          component: index
-        }
-      ]
+      component: Mine
+    },
+    {
+      path: '/resume',
+      component: resume
     },
     {
       path: '/Course',

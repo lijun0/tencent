@@ -8,52 +8,27 @@
             </router-link>
           </li>
           <li class="cate">
-            <a href="javascript:;" class="cate__item" @click="show1">公考求职</a>
+            <a href="javascript:;" class="cate__item" @click="show(work)">公考求职</a>
           </li>
           <li class="cate">
-            <a href="javascript:;" class="cate__item" @click="show2">法学院</a>
+            <a href="javascript:;" class="cate__item" @click="show(law)">法学院</a>
           </li>
           <li class="cate">
-            <a href="javascript:;" class="cate__item" @click="show3">财会金融</a>
+            <a href="javascript:;" class="cate__item" @click="show(financial)">财会金融</a>
           </li>
           <li class="cate">
-            <a href="javascript:;" class="cate__item" @click="show4">医疗卫生</a>
+            <a href="javascript:;" class="cate__item" @click="show(Medical)">医疗卫生</a>
           </li>
           <li class="cate">
-            <a href="javascript:;" class="cate__item" @click="show5">建造工程</a>
+            <a href="javascript:;" class="cate__item" @click="show(Construct)">建造工程</a>
           </li>
           <li class="cate">
-            <a href="javascript:;" class="cate__item" @click="show6">职业技能</a>
+            <a href="javascript:;" class="cate__item" @click="show(skill)">职业技能</a>
           </li>
       </ul>
       <div class="cateRight">
-        <ul class="cate-list" v-if="display1">
-          <li class="cate" v-for="item in work">
-            <router-link to="" class="cate__item">{{item}}</router-link>
-          </li>
-        </ul>
-        <ul class="cate-list" v-if="display2">
-          <li class="cate" v-for="item in law">
-            <router-link to="" class="cate__item">{{item}}</router-link>
-          </li>
-        </ul>
-        <ul class="cate-list" v-if="display3">
-          <li class="cate" v-for="item in financial">
-            <router-link to="" class="cate__item">{{item}}</router-link>
-          </li>
-        </ul>
-        <ul class="cate-list" v-if="display4">
-          <li class="cate" v-for="item in Medical">
-            <router-link to="" class="cate__item">{{item}}</router-link>
-          </li>
-        </ul>
-        <ul class="cate-list" v-if="display5">
-          <li class="cate" v-for="item in Construct">
-            <router-link to="" class="cate__item">{{item}}</router-link>
-          </li>
-        </ul>
-        <ul class="cate-list" v-if="display6">
-          <li class="cate" v-for="item in skill">
+        <ul class="cate-list" >
+          <li class="cate" v-for="item in list">
             <router-link to="" class="cate__item">{{item}}</router-link>
           </li>
         </ul>
@@ -81,12 +56,7 @@
     data () {
       return {
         selected: 1,
-        display1: false,
-        display2: false,
-        display3: false,
-        display4: false,
-        display5: false,
-        display6: false,
+        list: [],
         work: [],
         law: [],
         financial: [],
@@ -96,53 +66,8 @@
       }
     },
     methods: {
-      show1 () {
-        this.display1 = !this.display1
-        this.display2 = false
-        this.display3 = false
-        this.display4 = false
-        this.display5 = false
-        this.display6 = false
-      },
-      show2 () {
-        this.display2 = !this.display2
-        this.display1 = false
-        this.display3 = false
-        this.display4 = false
-        this.display5 = false
-        this.display6 = false
-      },
-      show3 () {
-        this.display3 = !this.display3
-        this.display1 = false
-        this.display2 = false
-        this.display4 = false
-        this.display5 = false
-        this.display6 = false
-      },
-      show4 () {
-        this.display4 = !this.display4
-        this.display1 = false
-        this.display2 = false
-        this.display3 = false
-        this.display5 = false
-        this.display6 = false
-      },
-      show5 () {
-        this.display5 = !this.display5
-        this.display1 = false
-        this.display2 = false
-        this.display3 = false
-        this.display4 = false
-        this.display6 = false
-      },
-      show6 () {
-        this.display6 = !this.display6
-        this.display1 = false
-        this.display2 = false
-        this.display3 = false
-        this.display4 = false
-        this.display5 = false
+      show (arr) {
+        this.list = arr
       }
     }
   }

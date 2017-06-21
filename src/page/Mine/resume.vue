@@ -5,16 +5,17 @@
     </header>
     <section class="resume-card">
       <div class="card-header">
-        <img src="http://xurenjie.cn:3000/resume/xurenjie.JPG" alt="" class="header__avatar">
+        <img src="http://q2.qlogo.cn/g?b=qq&k=1QkflibppmQa3DsG3fHwVTQ&s=140&t=1483347220" alt="" class="header__avatar">
       </div>
       <h2 class="name">张丽君</h2>
       <div class="desc">
+        <p class="wx">微信：lele19950124</p>
         <p class="tel">电话：17770031748</p>
         <p class="mail">mail：759651849@qq.com</p>
       </div>
       <div class="link-group">
         <a href="https://github.com/lijun0/tencent" class="github">
-          <img v-lazy="github" alt="">
+          <img src="http://xurenjie.cn:3000/resume/github.png" alt="">
         </a>
         <a href="https://www.lagou.com/resume/myresume.html" class="resume">
           我的简历
@@ -46,46 +47,46 @@ export default {
   .header
     width 100%
     text-align center
-    margin-top .326667rem
-    color #fff
-    font-size .544444rem
+    margin-top 4.326667rem
+    color #777
+    font-size 1.344444rem
   .resume-card
     text-align center
-    margin-top 1.6rem
+    margin-top 2.6rem
     .card-header
       width 100%
       text-align center
       .header__avatar
-        width 2rem
-        height 2rem
+        width 5rem
+        height 5rem
         background-size cover
         border-radius 999px
         border 3px solid #f2f2f2
     .name
-      margin-top .3rem
-      font-size .6rem
+      margin-top .8rem
+      font-size 1.5rem
       color #333
     .desc
       width 100%
       p
-        margin-top .4rem
-        font-size .4rem
+        margin-top .81rem
+        font-size 1rem
     .link-group
       margin-top 1rem
       position relative
       .github
         text-align center
-        font-size .4rem
+        font-size .6rem
         color #333
         img
           margin-left .3rem
-          width 1rem
-          height 1rem
+          width 1.5rem
+          height 1.5rem
           vertical-align middle
       .resume
         margin-top .6rem
         display block
         color #333
-        font-size .66667rem
+        font-size 1rem
         position relative
 </style>

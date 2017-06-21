@@ -85,7 +85,7 @@ i {
 .i-course-record,.i-course-test, .i-course-data {
     display: inline-block;
     position: relative;
-    top: 8px;
+    top: 15px;
     left: 0;
     width: 32px;
     height: 28px;
@@ -117,7 +117,6 @@ i {
 .course-cnt__lesson-list{
   width: 100%;
   height: 90%;
-
   position:absolute;
 }
 .course-cnt__lesson-item{
@@ -172,8 +171,5 @@ a{
     text-indent: 0;
     color: #a7a7a7;
     -webkit-font-smoothing: antialiased;
-}
-.i-v-bottom:before {
-    content: "\f005";
 }
 </style>

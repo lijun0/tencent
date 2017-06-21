@@ -167,7 +167,7 @@ a:active,a:visited{
 /*related-container*/
 .mask {
    width:100%;
-    height:50%;
+    height:45.3%;
     background-color:#fff;    
     /*margin: auto;*/
     position: absolute;

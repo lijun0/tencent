@@ -8,52 +8,27 @@
             </router-link>
           </li>
           <li class="cate">
-            <a href="javascript:;" class="cate__item" @click="show1">平面设计</a>
+            <a href="javascript:;" class="cate__item" @click="show(planedesign)">平面设计</a>
           </li>
           <li class="cate">
-            <a href="javascript:;" class="cate__item" @click="show2">UI设计</a>
+            <a href="javascript:;" class="cate__item" @click="show(UIdesign)">UI设计</a>
           </li>
           <li class="cate">
-            <a href="javascript:;" class="cate__item" @click="show3">设计软件</a>
+            <a href="javascript:;" class="cate__item" @click="show(designSoft)">设计软件</a>
           </li>
           <li class="cate">
-            <a href="javascript:;" class="cate__item" @click="show4">游戏动画设计</a>
+            <a href="javascript:;" class="cate__item" @click="show(playgames)">游戏动画设计</a>
           </li>
           <li class="cate">
-            <a href="javascript:;" class="cate__item" @click="show5">绘画设计</a>
+            <a href="javascript:;" class="cate__item" @click="show(draw)">绘画设计</a>
           </li>
           <li class="cate">
-            <a href="javascript:;" class="cate__item" @click="show6">影视后期设计</a>
+            <a href="javascript:;" class="cate__item" @click="show(tele)">影视后期设计</a>
           </li>
       </ul>
       <div class="cateRight">
-        <ul class="cate-list" v-if="display1">
-          <li class="cate" v-for="item in planedesign">
-            <router-link to="" class="cate__item">{{item}}</router-link>
-          </li>
-        </ul>
-        <ul class="cate-list" v-if="display2">
-          <li class="cate" v-for="item in UIdesign">
-            <router-link to="" class="cate__item">{{item}}</router-link>
-          </li>
-        </ul>
-        <ul class="cate-list" v-if="display3">
-          <li class="cate" v-for="item in designSoft">
-            <router-link to="" class="cate__item">{{item}}</router-link>
-          </li>
-        </ul>
-        <ul class="cate-list" v-if="display4">
-          <li class="cate" v-for="item in playgames">
-            <router-link to="" class="cate__item">{{item}}</router-link>
-          </li>
-        </ul>
-        <ul class="cate-list" v-if="display5">
-          <li class="cate" v-for="item in draw">
-            <router-link to="" class="cate__item">{{item}}</router-link>
-          </li>
-        </ul>
-        <ul class="cate-list" v-if="display6">
-          <li class="cate" v-for="item in tele">
+        <ul class="cate-list" >
+          <li class="cate" v-for="item in list">
             <router-link to="" class="cate__item">{{item}}</router-link>
           </li>
         </ul>
@@ -66,12 +41,7 @@
     data () {
       return {
         selected: 1,
-        display1: false,
-        display2: false,
-        display3: false,
-        display4: false,
-        display5: false,
-        display6: false,
+        list: [],
         planedesign: [
           '全部',
           '网页设计',
@@ -124,53 +94,8 @@
       }
     },
     methods: {
-      show1 () {
-        this.display1 = !this.display1
-        this.display2 = false
-        this.display3 = false
-        this.display4 = false
-        this.display5 = false
-        this.display6 = false
-      },
-      show2 () {
-        this.display2 = !this.display2
-        this.display1 = false
-        this.display3 = false
-        this.display4 = false
-        this.display5 = false
-        this.display6 = false
-      },
-      show3 () {
-        this.display3 = !this.display3
-        this.display1 = false
-        this.display2 = false
-        this.display4 = false
-        this.display5 = false
-        this.display6 = false
-      },
-      show4 () {
-        this.display4 = !this.display4
-        this.display1 = false
-        this.display2 = false
-        this.display3 = false
-        this.display5 = false
-        this.display6 = false
-      },
-      show5 () {
-        this.display5 = !this.display5
-        this.display1 = false
-        this.display2 = false
-        this.display3 = false
-        this.display4 = false
-        this.display6 = false
-      },
-      show6 () {
-        this.display6 = !this.display6
-        this.display1 = false
-        this.display2 = false
-        this.display3 = false
-        this.display4 = false
-        this.display5 = false
+      show (arr) {
+        this.list = arr
       }
     }
   }

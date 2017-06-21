@@ -2,7 +2,7 @@
   <div class="global">
     <div class="video">
       <div class="video-task__player">
-        <video width="375" height="200"  controls src="http://117.41.241.14/vedu.tc.qq.com/t14187jcf3r.m701.mp4?vkey=779C15929AFC3DD1E3C5185E4D25BEB1207DD1D68F8B77A831F8BF0B2B8FCD77EC63384F2F9757BF54016DD8720F8C9C9E231338FBA8435CBA4BFB9EA1A6B99097276C9DB1EB020AC72ED5ACBC0768B97ED9F15DBDBFFE7E&br=16&platform=2&fmt=auto&level=0&sdtfrom=v3010&guid=e477e5d6ade3db8a52fb690b9b5651f3"></video>
+        <video width="375" height="200"  controls src="http://117.21.186.14/vedu.tc.qq.com/j1416k11b0i.m701.mp4?vkey=A086B7CAACA063E89DDF0E55782F87ED3710AB1409AE6C3D7D3EEBBB60B3884221DFB4C747377FD42200CC05058B1FE74D4993C7B1B955DFF81C31F0457F7ABE6B7AF0702EC3A910CFE3E0F81A8DA2C9775184A5E436F55E&br=10&platform=2&fmt=auto&level=0&sdtfrom=v3010&guid=e477e5d6ade3db8a52fb690b9b5651f3"></video>
         <!--<i class="icon-font i-play video-task__player-icon"></i>-->
       </div>
     </div>

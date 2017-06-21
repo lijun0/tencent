@@ -8,52 +8,27 @@
             </router-link>
           </li>
           <li class="cate">
-            <a href="javascript:;" class="cate__item" @click="show1">实用英语</a>
+            <a href="javascript:;" class="cate__item" @click="show(English)">实用英语</a>
           </li>
           <li class="cate">
-            <a href="javascript:;" class="cate__item" @click="show2">出国留学</a>
+            <a href="javascript:;" class="cate__item" @click="show(abroad)">出国留学</a>
           </li>
           <li class="cate">
-            <a href="javascript:;" class="cate__item" @click="show3">国内考试</a>
+            <a href="javascript:;" class="cate__item" @click="show(exam)">国内考试</a>
           </li>
           <li class="cate">
-            <a href="javascript:;" class="cate__item" @click="show4">日语</a>
+            <a href="javascript:;" class="cate__item" @click="show(Japanese)">日语</a>
           </li>
           <li class="cate">
-            <a href="javascript:;" class="cate__item" @click="show5">韩语</a>
+            <a href="javascript:;" class="cate__item" @click="show(Korean)">韩语</a>
           </li>
           <li class="cate">
-            <a href="javascript:;" class="cate__item" @click="show6">小语种</a>
+            <a href="javascript:;" class="cate__item" @click="show(other)">小语种</a>
           </li>
       </ul>
       <div class="cateRight">
-        <ul class="cate-list" v-if="display1">
-          <li class="cate" v-for="item in English">
-            <router-link to="" class="cate__item">{{item}}</router-link>
-          </li>
-        </ul>
-        <ul class="cate-list" v-if="display2">
-          <li class="cate" v-for="item in abroad">
-            <router-link to="" class="cate__item">{{item}}</router-link>
-          </li>
-        </ul>
-        <ul class="cate-list" v-if="display3">
-          <li class="cate" v-for="item in exam">
-            <router-link to="" class="cate__item">{{item}}</router-link>
-          </li>
-        </ul>
-        <ul class="cate-list" v-if="display4">
-          <li class="cate" v-for="item in Japanese">
-            <router-link to="" class="cate__item">{{item}}</router-link>
-          </li>
-        </ul>
-        <ul class="cate-list" v-if="display5">
-          <li class="cate" v-for="item in Korean">
-            <router-link to="" class="cate__item">{{item}}</router-link>
-          </li>
-        </ul>
-        <ul class="cate-list" v-if="display6">
-          <li class="cate" v-for="item in other">
+        <ul class="cate-list" >
+          <li class="cate" v-for="item in list">
             <router-link to="" class="cate__item">{{item}}</router-link>
           </li>
         </ul>
@@ -66,12 +41,7 @@
     data () {
       return {
         selected: 1,
-        display1: false,
-        display2: false,
-        display3: false,
-        display4: false,
-        display5: false,
-        display6: false,
+        list: [],
         English: [
           '全部',
           '英语口语',
@@ -122,53 +92,8 @@
       }
     },
     methods: {
-      show1 () {
-        this.display1 = !this.display1
-        this.display2 = false
-        this.display3 = false
-        this.display4 = false
-        this.display5 = false
-        this.display6 = false
-      },
-      show2 () {
-        this.display2 = !this.display2
-        this.display1 = false
-        this.display3 = false
-        this.display4 = false
-        this.display5 = false
-        this.display6 = false
-      },
-      show3 () {
-        this.display3 = !this.display3
-        this.display1 = false
-        this.display2 = false
-        this.display4 = false
-        this.display5 = false
-        this.display6 = false
-      },
-      show4 () {
-        this.display4 = !this.display4
-        this.display1 = false
-        this.display2 = false
-        this.display3 = false
-        this.display5 = false
-        this.display6 = false
-      },
-      show5 () {
-        this.display5 = !this.display5
-        this.display1 = false
-        this.display2 = false
-        this.display3 = false
-        this.display4 = false
-        this.display6 = false
-      },
-      show6 () {
-        this.display6 = !this.display6
-        this.display1 = false
-        this.display2 = false
-        this.display3 = false
-        this.display4 = false
-        this.display5 = false
+      show (arr) {
+        this.list = arr
       }
     }
   }

@@ -38,14 +38,14 @@
             <div class="basic-info-list__teachers-list-mod">
               <div class="basic-info-list__teachers-list-top">
                 <div class="basic-info-list__teachers-list-item-img">
-                  <img src="http://10.url.cn/eth/ajNVdqHZLLCHNUDvsBaTEXfL8OlNnu7gf9QqQ6bibU9lEl8TY65oib3N4YxKLeIicVFshFen5AZ7U0/" alt="">
+                  <img src="http://q4.qlogo.cn/g?b=qq&amp;k=wfmsxsncsZHsy9O3Azp6xA&amp;s=640&amp;t=1431404340" alt="">
                 </div>
-                <p class="basic-info-list__teachers-list-item-name">学神IT-班主任-刘超</p>
-                <p class="basic-info-list__teachers-list-item-static">好评度 -</p>
-                <p class="basic-info-list__teachers-list-item-static">课程数 4</p>
-                <p class="basic-info-list__teachers-list-item-static">学生数 3万</p>
+                <p class="basic-info-list__teachers-list-item-name">学神IT-顾问-姚老师</p>
+                <p class="basic-info-list__teachers-list-item-static">好评度 99%</p>
+                <p class="basic-info-list__teachers-list-item-static">课程数 30</p>
+                <p class="basic-info-list__teachers-list-item-static">学生数 18万</p>
               </div>
-              <div class="basic-info-list__teachers-list-item-info">刘超老师-资深HR，人力资源专家，现任学神IT就业指导顾问，帮助学员推荐就业，在此恭祝各位加入学神IT，4个月的高温锻造，体会自信与成功，从此在运维架构师之路上势如破竹，如日中天，步步高升！
+              <div class="basic-info-list__teachers-list-item-info">姚老师-学神教育女一号，曾任猎聘网人力总监，高级猎头，在互联网行业拥有丰富的人脉，现任学神教育就业部总负责人，已帮助上万学员找到自己心仪的工作。如果你想找到更好的工作，我将助你一臂之力
               </div>
             </div>
           </li>
@@ -556,7 +556,6 @@ ul{
     line-height: 14px;
     text-align: center;
     color: #777;
-
 }
 .basic-info-list__agency-comment-list-item-hd {
     display: block;
