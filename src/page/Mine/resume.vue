@@ -17,7 +17,7 @@
         <a href="https://github.com/lijun0/tencent" class="github">
           <img src="http://xurenjie.cn:3000/resume/github.png" alt="">
         </a>
-        <a href="https://www.lagou.com/resume/myresume.html" class="resume">
+        <a href="http://orxfqlpdb.bkt.clouddn.com/%E5%BC%A0%E4%B8%BD%E5%90%9B%E7%9A%84%E7%AE%80%E5%8E%86%20%282%29.pdf" class="resume">
           我的简历
         </a>
       </div>

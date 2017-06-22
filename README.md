@@ -96,4 +96,4 @@ Action 可以包含任意异步操作。
  
 我的简历
 
-[感兴趣请点我](https://www.lagou.com/resume/myresume.html)
+[感兴趣请点我](http://orxfqlpdb.bkt.clouddn.com/%E5%BC%A0%E4%B8%BD%E5%90%9B%E7%9A%84%E7%AE%80%E5%8E%86%20%282%29.pdf)
